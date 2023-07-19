@@ -40,3 +40,33 @@
     opacity: 1;
     padding-right: 0;
 }
+
+.bottom-text-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom;
+    width: 100%;
+    height: 1000px;
+}
+
+.bottom-text {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.topic {
+    color: rgb(64, 54, 53);
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+
+.topic:hover {
+    color: rgb(64, 54, 53);
+    text-decoration: none;
+    transform: scale(1.03);
+}

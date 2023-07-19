@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 800px;
+    height: 1000px;
     align-items: center;
     vertical-align: bottom;
 }
@@ -17,6 +17,10 @@
 
 .icon:hover {
     transform: scale(1.06);
+}
+
+.icon:active {
+    transform: scale(.99);
 }
 
 .slogan {

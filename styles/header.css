@@ -21,6 +21,11 @@
 .char {
     width: 60px;
     height: 60px;
+    transition: transform 5s;
+}
+
+.char:hover {
+    transform: scale(1.5);
 }
 
 .nav-buttons {
