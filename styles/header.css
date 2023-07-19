@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ffffff;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+}
+
+.web-title {
+    font-size: 30px;
+    color: #353535;
+    font-weight: bold;
+}
+
+.char {
+    width: 60px;
+    height: 60px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    justify-self: center;
+    width: 400px;
+}
+
+.nav {
+    text-decoration: none;
+}
+
+.nav:hover {
+    text-decoration: none;
+}
+
+.button {
+    color: #353535;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.04);
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+

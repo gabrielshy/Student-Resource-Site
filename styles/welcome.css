@@ -1,0 +1,48 @@
+.welcome-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    align-items: center;
+    vertical-align: bottom;
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+    background-image: url("../images/logo.png");
+    transition: transform 0.5s;
+}
+
+.icon:hover {
+    transform: scale(1.01);
+}
+
+.slogan {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.arrow {
+    margin-top: 30px;
+}
+
+.animate_pause {
+    animation-play-state: paused;
+    opacity: 0;
+}
+
+.arrow_icon {
+    font-size: 25px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from{ transform: translateY(0);}
+    to{ transform: translateY(7px);
+    opacity: 0;}
+}
+

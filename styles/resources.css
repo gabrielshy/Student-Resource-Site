@@ -1,0 +1,32 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 800px;
+}
+
+.top-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 250px;
+}
+
+.title-head {
+    display: flex;
+    justify-content: column;
+
+}
+
+.title1 {
+    color: #353535;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.title2 {
+    color: #353535;
+    font-size: 20px;
+    font-weight: bold;
+}
