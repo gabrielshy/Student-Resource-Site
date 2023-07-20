@@ -32,7 +32,7 @@
 .hidden {
     opacity: 0;
     transition: 
-    opacity 1.5s,
+    opacity 2s,
     padding-right 1.5s;
 }
 
@@ -42,13 +42,16 @@
 }
 
 .bottom-text-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     vertical-align: bottom;
     width: 100%;
-    height: 1000px;
+    height: 600px;
+    margin-top: 300px;
+    margin-bottom: 200px;
 }
 
 .bottom-text {
