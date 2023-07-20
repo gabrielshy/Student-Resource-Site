@@ -7,7 +7,7 @@
     <link href="https://use.typekit.net/emv3zbo.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.digital.arizona.edu/lib/arizona-bootstrap/2.0.23/css/arizona-bootstrap.min.css" crossorigin="anonymous">
 
-
+    <link rel="stylesheet" href="styles/tabs.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/resources.css">
@@ -43,11 +43,31 @@
     <div class="top-card">
         <p class="title1">
             Resources
-        </p>
         <p class="title2">
             Anything we find, is right here.
         </p>
     </div>
     <script src="js/random.js"></script>
+    
+    <div class="tabContent">
+        <div class="buttonContainer">
+            <button onclick="showPanel(0,'#f44336')">Careers/Internships</button>
+            <button onclick="showPanel(1,'#f44336')">Textbooks</button>
+            <button onclick="showPanel(2,'#f44336')">Chrome Extentions</button>
+            <button onclick="showPanel(3,'#f44336')">Research</button>
+            <button onclick="showPanel(4,'#f44336')">Essay Help</button>
+            <button onclick="showPanel(5,'#f44336')">Scholarships</button>
+            <button onclick="showPanel(6,'#f44336')">Etc.</button>
+        </div>
+        <div class="tabPanel">Careers: Content</div>
+        <div class="tabPanel">Textbook: Content</div>
+        <div class="tabPanel">Extentions: Content</div>
+        <div class="tabPanel">Research: Content</div>
+        <div class="tabPanel">Essay: Content</div>
+        <div class="tabPanel">Scholarship: Content</div>
+        <div class="tabPanel">Etc.: Content</div>
+    </div>
+
+    <script src="js/tabs.js"></script>
 </body>
 </html>

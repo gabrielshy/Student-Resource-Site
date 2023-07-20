@@ -1,0 +1,40 @@
+.tabContent {
+    font-family: 'proxima-nova', sans-serif;
+    width: 100%;
+    height: 350px;
+
+}
+
+.tabContent .buttonContainer {
+    height: 20%;
+}
+
+.tabContent .buttonContainer button {
+    width: 14.2857143%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+
+.tabContent .buttonContainer button:hover {
+background-color: #b33535; 
+}
+
+.tabContent .tabPanel {
+    height: 85%;
+    background-color: pink;
+    color: blue;
+    text-align: center;
+    padding-top: 105px;
+    box-sizing: border-box;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 22px;
+    display: flex;
+    
+}
