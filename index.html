@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/welcome.css">
     <link rel="stylesheet" href="styles/breakcard.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/endcard.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -86,8 +88,61 @@
             Textbooks
         </a>
     </div>
+    <div class="contact">
+        <p class="contact-title">
+            Got something to add? Contact us!
+        </p>
+        <div class="contact-card">
+            <div class="email-card">
+                <p  class="email">
+                    studentpluh@gmail.com
+                </p>
+            </div>
+            <form class="contact-inputs" action="https://formsubmit.co/studentpluh@gmail.com" method="POST">
+                <div class="name-email">
+                    <input class="input-name" type="text" id="name" name="name" placeholder="Name" required>
+                    <input class="input-email" type="text" id="email" name="email" placeholder="Email" required>
+                </div>
+                <input class="input-message" type="text" id="message" name="message" placeholder="Message" required>
+                <button class="send-button" type="submit">Send</button>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Portfolio contact form email">
+                <input type="hidden" name="_next" value="https://gabrielshy.github.io/Thank-you-page/">
+            </form>
+        </div>
+    </div>
+    <div class="end-card">
+        <p class="end-text">
+            Created By:  
+        </p>
+        <p class="end-text">
+            Francis Gabriel Anos
+        </p>
+        <div class="francis-socials">
+            <a href="https://www.linkedin.com/in/francis-g-anos" target="_blank">
+                <i class="fa-brands fa-linkedin linkedin-icon" style="color: #353535;"></i>
+            </a>
+            <a href="https://github.com/gabrielshy" target="_blank">
+                <i class="fa-brands fa-square-github github-icon " style="color: #353535;"></i>
+            </a>
+        </div>
+        <div>
+            <p class="end-text">
+                and Elijah James
+            </p>
+        </div>
+        <div class="elijah-socials">
+            <a href="https://www.linkedin.com/in/elijah-james-022536248/" target="_blank">
+                <i class="fa-brands fa-linkedin linkedin-icon" style="color: #353535;"></i>
+            </a>
+            <a href="https://github.com/Eli-69" target="_blank">
+                <i class="fa-brands fa-square-github github-icon " style="color: #353535;"></i>
+            </a>
+        </div>
+    </div>
     <script src="js/app.js"></script>
     <script src="js/random.js"></script>
     <script src="js/audio.js"></script>
+    <script src="js/texthover.js"></script>
 </body>
 </html>
