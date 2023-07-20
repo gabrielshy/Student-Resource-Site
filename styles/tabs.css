@@ -1,9 +1,13 @@
 .tabContent {
-    font-family: 'proxima-nova', sans-serif;
     width: 100%;
-    height: 350px;
-
+    height: 900px;
 }
+
+.tab-button {
+    font-family: 'proxima-nova', sans-serif;
+    font-weight: bold;
+}
+
 
 .tabContent .buttonContainer {
     height: 20%;

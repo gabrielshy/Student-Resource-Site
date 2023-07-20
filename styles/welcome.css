@@ -33,6 +33,10 @@
     margin-top: 30px;
 }
 
+.arrow_icon {
+    color: var(--secondary-color);
+}
+
 .animate_pause {
     animation-play-state: paused;
     opacity: 0;

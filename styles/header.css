@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #ffffff;
+    background-color: var(--primary-color);
     align-items: center;
     width: 100%;
     position: fixed;
@@ -14,7 +14,7 @@
 
 .web-title {
     font-size: 30px;
-    color: #353535;
+    color: var(--secondary-color);
     font-weight: bold;
 }
 
@@ -35,10 +35,11 @@
     align-items: center;
     vertical-align: middle;
     justify-self: center;
-    width: 400px;
+    width: 500px;
 }
 
 .nav {
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -47,17 +48,21 @@
 }
 
 .button {
-    color: #353535;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 0.2s;
+    transition: transform 0.2s;
 }
 
 .button:hover {
-    transform: scale(1.04);
+    transform: scale(1.1);
 }
 
 .button:active {
     transform: scale(0.98);
+}
+
+
+.mode-icon {
+    width: 30px;
+    right: 0px;
+    cursor: pointer;
 }
 

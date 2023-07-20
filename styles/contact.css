@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 700px;
+    width: 500px;
 }
 
 .contact-title {
@@ -38,15 +38,17 @@
   }
   
   ::placeholder {
-    color: rgb(255, 244, 224);
+    color: #353535;
   }
 
 .input-name[type='text'] {
-    color: rgb(255, 244, 224);
+    color: #353535;
     border-radius: 5px;
     outline: none;
-    border: none;
-    background-color: #353535;
+    border: solid;
+    border-width: 1px;
+    border-color: #353535;
+    background-color: #ffffff;
     width: 200px;
     padding-left: 10px;
     margin-bottom: 20px;
@@ -54,11 +56,13 @@
   }
   
   .input-email[type='text'] {
-    color: rgb(255, 244, 224);
+    color: #353535;
     border-radius: 5px;
     outline: none;
-    border: none;
-    background-color: #353535;
+    border: solid;
+    border-width: 1px;
+    border-color: #353535;
+    background-color: #ffffff;
     width: 200px;
     padding-left: 10px;
     margin-bottom: 20px;
@@ -66,11 +70,13 @@
   }
   
   .input-message[type='text'] {
-    color: rgb(255, 244, 224);
+    color: #353535;
     border-radius: 5px;
     outline: none;
-    border: none;
-    background-color: #353535;
+    border: solid;
+    border-width: 1px;
+    border-color: #353535;
+    background-color: #ffffff;
     width: 405px;
     line-height: 30px;
     padding-left: 10px;
@@ -79,21 +85,21 @@
   }
   
   .send-button {
-    color: rgb(255, 244, 224);
+    color: var(--primary-color);
     margin-top: 10px;
     font-weight: bold;
     height: 40px;
     width: 80px;
     border-radius: 10px;
     border: none;
-    background-color: #353535;
-    transition: background-color 0.1s ease-in-out;
+    background-color: var(--secondary-color);
+    transition: transform 0.1s ease-in-out;
   }
   
   .send-button:hover {
-    background-color: rgb(180, 96, 96);
+    transform: scale(1.04);
   }
   
   .send-button:active {
-    background-color: rgb(255, 244, 224);
+    transform: scale(0.99);
   }
