@@ -1,8 +1,9 @@
 .body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: var(--primary-color);
-    height: 1100px;
+    height: 1000px;
 }
 
 .top-card {
@@ -25,14 +26,8 @@
     font-weight: bold;
 }
 
-.title2 {
-    color: var(--secondary-color);
-    font-size: 20px;
-    font-weight: bold;
-}
-
 .search {
-    color: var(--secondary-color);
+    color: #353535;
     width: 600px;
     height: 50px;
     text-decoration: none;
@@ -51,5 +46,26 @@
 }
 
 input, select, textarea{
+    color: #353535;
+}
+
+.search-button {
+    height: 50px;
+    width: 50px;
+    border-width: 1px;
+    background-color: white;
+    border-radius: 15px;
+    transition: transform 0.2s;
+}
+
+.search-button:hover {
+    transform: scale(1.05);
+}
+
+.search-button:active {
+    transform: scale(.99);
+}
+
+.fa-magnifying-glass {
     color: #353535;
 }

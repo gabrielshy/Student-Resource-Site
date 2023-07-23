@@ -1,0 +1,143 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    height: 1000px;
+}
+
+.title-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 300px;
+    top: 200px;
+}
+
+.title-container {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.results-card {
+    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    background-color: var(--primary-color);
+    height: 600px;
+    transition: transform 1s;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: 350px;
+    width: 1000px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.abebooks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    height: 100px;
+    width: 900px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.abebooks-logo {
+    width: 150px;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.used {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.total-text {
+    color: #353535;
+    font-weight: bold;
+}
+
+.total-num {
+    font-size: 14px;
+    color: #353535;
+    font-weight: bold;
+}
+
+.best-text {
+    color: #353535;
+    font-weight: bold;
+}
+
+.price-num {
+    font-size: 14px;
+    color: #353535;
+    font-weight: bold;
+}
+
+.amazon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    height: 100px;
+    width: 900px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.amazon-logo {
+    width: 120px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.coming-soon {
+    color: #353535;
+    font-weight: bold;
+    font-size: 15px;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+
+    <link href="https://use.typekit.net/emv3zbo.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.digital.arizona.edu/lib/arizona-bootstrap/2.0.23/css/arizona-bootstrap.min.css" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/endcard.css">
+    <link rel="stylesheet" href="../styles/search-results.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Search Results</title>
+</head>
+<body class="body">
+    <script>
+        const darkModePreference = localStorage.getItem("darkMode");
+        if (darkModePreference === "enabled") {
+            document.body.classList.add("dark-theme");
+            document.getElementById("icon").src = "../images/night-mode.png";
+        } else {
+            document.body.classList.remove("dark-theme");
+            document.getElementById("icon").src = "../images/contrast.png";
+        }
+    </script>
+    <div class="header">
+        <div class="web-title">
+            StudentPluh
+            <img id="char" class="char">
+        </div>
+        <div class="nav-buttons">
+            <a class="nav" href="../templates/index.html">
+                <p class="button">
+                    Home
+                </p>
+            </a>
+            <a class="nav" href="../templates/resources.html">
+                <p class="button">
+                    Resources
+                </p>
+            </a>
+            <a class="nav" href="../templates/search.html">
+                <p class="button">
+                    Textbooks
+                </p>
+            </a>
+            <img src="../images/contrast.png" class="mode-icon button" id="icon">
+        </div>
+    </div>
+    <div class="title-card">
+        <div class="title-container">
+            <p class="title-text">
+                ISBN: 
+            </p>
+            <p class="title-text" id="isbn-text">
+    
+            </p>
+        </div>
+    </div>
+    <div class="results-card" id="results">
+        <div class="results">
+            <div class="abebooks">
+                <a href="https://www.abebooks.com/">
+                    <img class="abebooks-logo" src="../images/AbeBooks-Logo.png">
+                </a>
+                <div class="prices">
+                    <div class="new">
+                        <p class="total-text">
+                            New Total:
+                        </p>
+                        <p class="total-num" id="newTotalText">
+                            
+                        </p>
+                        <p class="best-text">
+                            Best Price:
+                        </p>
+                        <p class="price-num" id="newPriceText">
+                            
+                        </p>
+                    </div>
+                    <div class="used">
+                        <p class="total-text">
+                           Used Total:
+                        </p>
+                        <p class="total-num" id="usedTotalText">
+                            
+                        </p>
+                        <p class="best-text">
+                            Best Price:
+                        </p>
+                        <p class="price-num" id="usedPriceText">
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="amazon">
+                <div class="logo">
+                    <a href="https://www.amazon.com/">
+                        <img class="amazon-logo" src="../images/Amazon-Logo.png">
+                    </a>
+                </div>
+                <div class="prices">
+                    <p class="coming-soon">
+                        Amazon Capabilities Coming Soon
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="end-card" id="end">
+        <p class="end-text">
+            Created By:  
+        </p>
+        <p class="end-text">
+            Francis Gabriel Anos
+        </p>
+        <div class="francis-socials">
+            <a href="https://www.linkedin.com/in/francis-g-anos" target="_blank">
+                <i class="fa-brands fa-linkedin linkedin-icon"></i>
+            </a>
+            <a href="https://github.com/gabrielshy" target="_blank">
+                <i class="fa-brands fa-square-github github-icon"></i>
+            </a>
+        </div>
+        <div>
+            <p class="end-text">
+                and Elijah James
+            </p>
+        </div>
+        <div class="elijah-socials">
+            <a href="https://www.linkedin.com/in/elijah-james-022536248/" target="_blank">
+                <i class="fa-brands fa-linkedin linkedin-icon"></i>
+            </a>
+            <a href="https://github.com/Eli-69" target="_blank">
+                <i class="fa-brands fa-square-github github-icon"></i>
+            </a>
+        </div>
+    </div>
+    <script src="../js/random.js"></script>
+    <script src="../js/pagemode.js"></script>
+    <script src="../js/searchPageData.js"></script>
+</body>
+</html>
