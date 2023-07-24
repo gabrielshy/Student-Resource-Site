@@ -1,59 +1,47 @@
-class AbeBooks {
-
-    async __get_price(payload) {
-        const url = "http://localhost:8080/https://www.abebooks.com/servlet/DWRestService/pricingservice";
-        const options = {
-            method: 'POST',
-            body: new URLSearchParams(payload),
-        };
-
-        const response = await fetch(url, options);
-        if (!response.ok) {
-            throw new Error("Request failed: " + response.status);
-        }
-        return response.json();
-    }
-    
-    async getPriceByISBN(isbn) {
-        const payload = {
-            action: 'getPricingDataByISBN',
-            isbn: isbn,
-            container: `pricingService-${isbn}`
-        };
-        return this.__get_price(payload);
-    }
-}
-
-const abeBooksApi = new AbeBooks();
-const hiddenElements = document.querySelectorAll(".non-active");
-const searchBar = document.getElementById("isbn")
-
 async function getPriceByISBN() {
-    const isbnInput = document.getElementById("isbn");
-    const isbn = isbnInput.value;
+  const isbnInput = document.getElementById("isbn");
+  const isbn = isbnInput.value.trim();
 
-    if (isNaN(isbn)) {
-        searchBar.value = "";
-        searchBar.placeholder = "Please enter a valid ISBN (numeric value)";
-        return; // Return early without proceeding further
+  if (!/^\d{10,13}$/.test(isbn)) {
+    isbnInput.value = "";
+    isbnInput.placeholder = "Please enter a valid ISBN (10-13 digits)";
+    return;
+  }
+
+  const url = `https://amazon-web-scraping-api.p.rapidapi.com/products/search?criteria=${encodeURIComponent(isbn)}&page=1&countryCode=US&languageCode=EN`;
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': 'e50ad5c2damsh66bf684007f0937p16dc4cjsnbddd3dd25e62',
+      'X-RapidAPI-Host': 'amazon-web-scraping-api.p.rapidapi.com'
     }
+  };
+
+  try {
+    const response = await fetch(url, options);
+    const result = await response.text();
+    console.log(result);
 
     try {
-        const priceData = await abeBooksApi.getPriceByISBN(isbn);
-        var success = priceData["success"]
-        sessionStorage.setItem('data', JSON.stringify(priceData))
-        console.log(success)
-        if (success === true) {
-            hiddenElements.forEach((element) => {
-                window.location.replace("../templates/search-results.html"), true;
-                element.classList.remove("non-active");
-            });
-            document.getElementById("end").scrollIntoView({behavior: 'smooth'});
-        } else if (success === false) {
-            searchBar.value = "";
-            searchBar.placeholder = "Invalid ISBN";
-        };
+      const jsonData = JSON.parse(result);
+      if (jsonData.products.length === 0) {
+        window.location.href = "../templates/no-results.html";
+        return;
+      }
+
+      sessionStorage.setItem('data', result);
+      window.location.href = "../templates/search-results.html";
     } catch (error) {
-        console.log(error);
+      console.error(error);
     }
+  } catch (error) {
+    console.error(error);
+  }
 }
+
+const isbnInput = document.getElementById("isbn");
+isbnInput.addEventListener("keydown", function (event) {
+  if (event.keyCode === 13) {
+    getPriceByISBN();
+  }
+});
