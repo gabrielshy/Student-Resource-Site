@@ -22,12 +22,10 @@ function showPanel(panelIndex, colorCode) {
     tabPanels[panelIndex].style.backgroundColor = colorCode;
 }
 
-// Attach click event listeners to each tab button
 tabButtons.forEach(function (button, index) {
     button.addEventListener("click", function () {
         showPanel(index, 'background-color: var(--primary-color);');
     });
 });
 
-// Show the first tab by default
 showPanel(0, 'background-color: var(--primary-color);');
