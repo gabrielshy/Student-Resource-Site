@@ -1,8 +1,6 @@
 .tabContent {
     width: 100%;
-    height: 2000px;
-    
-    
+    height: 1000px;   
 }
 
 .tab-button {
@@ -45,13 +43,12 @@
 } 
 
 .tabContent .tabPanel {
-    height: 85%;
+    height: 50%;
     background-color: var(--primary-color);
     text-align: center;
     padding-top: 10px;
     box-sizing: border-box;
     font-family: 'proxima-nova', sans-serif;
-    font-size: 22px;
     display: flex;
 }
 
@@ -66,16 +63,22 @@
 
 .Careers {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border-radius: 25px;
     width: 100%;
-    height: 500px;
 } 
+.row {
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    width: 100%;
+    height: 300px;
+}
 
 /* I changed careers cause the cards were in it so I had to put it in the middle */
 
 .card1 {
-    border-radius: 25px;
     width: 437.5px;
     height: 250px;
     margin: 10px;
@@ -87,29 +90,57 @@
     float: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    transition: box-shadow 0.5s;
+}
+
+.card1:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .chead {
     height: 60px;
     width: 100%;
-    background-color:aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.ctags {
+.card-title {
+    font-size: 25px;
+}
+
+/*.ctags {
     height: 30px;
     width: 100%;
-    background-color:rgb(103, 158, 81);
+    display: flex;
+}
+
+.techTag {
+    background-color: #353535;
+    width: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
 .cdisc {
-    height: 140px;
+    height: 150px;
     width: 100%;
-    background-color:rgb(190, 199, 70);
+}
+
+.disc {
+    font-size: 20px;
+} */
+
+.logos {
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 20px;
 }
 
 .card2 {
-    border-radius: 25px;
     width: 437.5px;
     height: 250px;
     margin: 10px;
@@ -121,11 +152,15 @@
     float: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    transition: box-shadow 0.5s;
+}
+
+.card2:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card3 {
-    border-radius: 25px;
     width: 437.5px;
     height: 250px;
     margin: 10px;
@@ -137,10 +172,13 @@
     float: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    transition: box-shadow 0.5s;
 }
 
-
+.card3:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
 
 .text_box {
     font-size: 45px;
@@ -152,53 +190,50 @@
 
 .Textbooks {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border-radius: 25px;
     width: 100%;
-    height: 500px;
 }
 
 .Extentions {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border-radius: 25px;
     width: 100%;
-    height: 500px;
 }
 
 .Research {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border-radius: 25px;
     width: 100%;
-    height: 500px;
 }
 
 .Essays {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 25px;
-    width: 1385px;
-    height: 500px;
-    margin: 10px;
-    margin-left: 70px;
-    background-color: var(--secondary-color);
+    width: 100%;
 }
 
 .Scholarships {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 25px;
-    width: 1385px;
-    height: 500px;
-    margin: 10px;
-    margin-left: 70px;
-    background-color: var(--secondary-color);
+    width: 100%;
 }
 
 .Etc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 25px;
-    width: 1385px;
-    height: 500px;
-    margin: 10px;
-    margin-left: 70px;
-    background-color: var(--secondary-color);
+    width: 100%;
 }
 
 
