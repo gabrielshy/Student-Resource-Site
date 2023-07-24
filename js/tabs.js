@@ -7,7 +7,7 @@ function showPanel(panelIndex,colorCode) {
         node.style.color="";
       });
       tabButtons[panelIndex].style.backgroundColor=colorCode;
-      tabButtons[panelIndex].style.color="black";
+      tabButtons[panelIndex].style.color="background-color: var(--primary-color);";
       tabPanels.forEach(function(node) {
         node.style.display="none";
 
@@ -15,4 +15,4 @@ function showPanel(panelIndex,colorCode) {
       tabPanels[panelIndex].style.display="block";
       tabPanels[panelIndex].style.backgroundColor=colorCode;
 }
-showPanel(0,'#ffffff');
+showPanel(0,'background-color: var(--primary-color);');

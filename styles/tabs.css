@@ -1,11 +1,14 @@
 .tabContent {
     width: 100%;
     height: 2000px;
+    
+    
 }
 
 .tab-button {
     font-family: 'proxima-nova', sans-serif;
     font-weight: bold;
+    
 }
 
 
@@ -23,19 +26,18 @@
     padding: 10px;
     font-family: 'proxima-nova', sans-serif;
     font-size: 18px;
-    color: var(--secondary-color);
     font-weight: bold;
-    background-color: #ffffff;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
-/* .tabContent .buttonContainer button:hover {
-background-color: #b33535; 
-} */
+ .tabContent .buttonContainer button:hover {
+    transform: scale(1.05);
+} 
 
 .tabContent .tabPanel {
     height: 85%;
-    background-color: pink;
-    color: blue;
+    background-color: var(--primary-color);
     text-align: center;
     padding-top: 10px;
     box-sizing: border-box;
@@ -43,22 +45,56 @@ background-color: #b33535;
     font-size: 22px;
     display: flex;
     
+    
 }
 
-.Careers {
+/*.Careers {
     border-radius: 25px;
     width: 1385px;
     height: 500px;
     margin: 10px;
     margin-left: 70px;
-    background-color: rgb(68, 68, 68);
+    background-color: var(--secondary-color);
+} */
+
+.card1 {
+    border-radius: 25px;
+    width: 475px;
+    height: 400px;
+    margin: 10px;
+    margin-left: 30px;
+    background-color: var(--secondary-color);
+    float: left;
 }
+
+.card2 {
+    border-radius: 25px;
+    width: 475px;
+    height: 400px;
+    margin: 10px;
+    margin-left: 10px;
+    background-color: var(--secondary-color);
+    float: left;
+}
+
+.card3 {
+    border-radius: 25px;
+    width: 475px;
+    height: 400px;
+    margin: 10px;
+    margin-left: 10px;
+    background-color: var(--secondary-color);
+    float: left;
+}
+
+
 
 .text_box {
     font-size: 45px;
     font-weight: bold;
     position: relative;
     top: -80px;
+    color: var(--secondary-color);
 }
 
 .Textbooks {
@@ -67,7 +103,7 @@ background-color: #b33535;
     height: 500px;
     margin: 10px;
     margin-left: 70px;
-    background-color: rgb(68, 68, 68);
+    background-color: var(--secondary-color);
 }
 
 .Extentions {
@@ -76,7 +112,7 @@ background-color: #b33535;
     height: 500px;
     margin: 10px;
     margin-left: 70px;
-    background-color: rgb(68, 68, 68);
+    background-color: var(--secondary-color);
 }
 
 .Research {
@@ -85,7 +121,7 @@ background-color: #b33535;
     height: 500px;
     margin: 10px;
     margin-left: 70px;
-    background-color: rgb(68, 68, 68);
+    background-color: var(--secondary-color);
 }
 
 .Essays {
@@ -94,7 +130,7 @@ background-color: #b33535;
     height: 500px;
     margin: 10px;
     margin-left: 70px;
-    background-color: rgb(68, 68, 68);
+    background-color: var(--secondary-color);
 }
 
 .Scholarships {
@@ -103,7 +139,7 @@ background-color: #b33535;
     height: 500px;
     margin: 10px;
     margin-left: 70px;
-    background-color: rgb(68, 68, 68);
+    background-color: var(--secondary-color);
 }
 
 .Etc {
@@ -112,7 +148,7 @@ background-color: #b33535;
     height: 500px;
     margin: 10px;
     margin-left: 70px;
-    background-color: rgb(68, 68, 68);
+    background-color: var(--secondary-color);
 }
 
 
