@@ -236,4 +236,1032 @@
     width: 100%;
 }
 
+@media only screen and (max-width: 1434px ){
+    .tabContent {
+        width: 100%;
+        height: 700px;   
+    }
+    
+    .tab-button {
+        font-family: 'proxima-nova', sans-serif;
+        font-weight: bold;
+        
+    }
+    
+    .active {
+        font-size: 12px;
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
+    }
+    
+    .non-active {
+        font-size: 12px;
+    }
+    
+    .tabContent .buttonContainer {
+        height: 20%;
+    }
+    
+    .tabContent .buttonContainer button {
+        width: 14.2857143%;
+        height: 100%;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px;
+        font-family: 'proxima-nova', sans-serif;
+        font-weight: bold;
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        transition: transform 0.3s;
+    }
+    
+    .tabContent .buttonContainer button:hover {
+        transform: scale(1.05);
+    } 
+    
+    .tabContent .tabPanel {
+        height: 50%;
+        background-color: var(--primary-color);
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+        font-family: 'proxima-nova', sans-serif;
+        display: flex;
+    }
 
+    .Careers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    } 
+    .row {
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+        height: 200px;
+    }
+ 
+    .card1 {
+        width: 228.75px;
+        height: 125px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card1:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .chead {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-title {
+        font-size: 17.5px;
+    }
+
+    .logos {
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    
+    .card2 {
+        width: 218.75px;
+        height: 125px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card2:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card3 {
+        width: 218.75px;
+        height: 125px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card3:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .text_box {
+        font-size: 45px;
+        font-weight: bold;
+        position: relative;
+        top: -80px;
+        color: var(--secondary-color);
+    }
+    
+    .Textbooks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Extentions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Research {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Essays {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Scholarships {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Etc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px ){
+    .tabContent {
+        width: 100%;
+        height: 700px;   
+    }
+    
+    .tab-button {
+        font-family: 'proxima-nova', sans-serif;
+        font-weight: bold;
+        
+    }
+    
+    .active {
+        font-size: 12px;
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
+    }
+    
+    .non-active {
+        font-size: 12px;
+    }
+    
+    .tabContent .buttonContainer {
+        height: 20%;
+    }
+    
+    .tabContent .buttonContainer button {
+        width: 14.2857143%;
+        height: 100%;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px;
+        font-family: 'proxima-nova', sans-serif;
+        font-weight: bold;
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        transition: transform 0.3s;
+    }
+    
+    .tabContent .buttonContainer button:hover {
+        transform: scale(1.05);
+    } 
+    
+    .tabContent .tabPanel {
+        height: 50%;
+        background-color: var(--primary-color);
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+        font-family: 'proxima-nova', sans-serif;
+        display: flex;
+    }
+
+    .Careers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    } 
+    .row {
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+        height: 200px;
+    }
+ 
+    .card1 {
+        width: 218.75px;
+        height: 125px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card1:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .chead {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-title {
+        font-size: 17.5px;
+    }
+
+    .logos {
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    
+    .card2 {
+        width: 218.75px;
+        height: 125px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card2:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card3 {
+        width: 218.75px;
+        height: 125px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card3:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .text_box {
+        font-size: 45px;
+        font-weight: bold;
+        position: relative;
+        top: -80px;
+        color: var(--secondary-color);
+    }
+    
+    .Textbooks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Extentions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Research {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Essays {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Scholarships {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Etc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 800px ){
+    .tabContent {
+        width: 100%;
+        height: 500px;   
+    }
+    
+    .tab-button {
+        font-family: 'proxima-nova', sans-serif;
+        font-weight: bold;
+        
+    }
+    
+    .active {
+        font-size: 10px;
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
+    }
+    
+    .non-active {
+        font-size: 10px;
+    }
+    
+    .tabContent .buttonContainer {
+        height: 20%;
+    }
+    
+    .tabContent .buttonContainer button {
+        width: 14.2857143%;
+        height: 100%;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px;
+        font-family: 'proxima-nova', sans-serif;
+        font-weight: bold;
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        transition: transform 0.3s;
+    }
+    
+    .tabContent .buttonContainer button:hover {
+        transform: scale(1.05);
+    } 
+    
+    .tabContent .tabPanel {
+        height: 50%;
+        background-color: var(--primary-color);
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+        font-family: 'proxima-nova', sans-serif;
+        display: flex;
+    }
+
+    .Careers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    } 
+    .row {
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+        height: 100px;
+    }
+ 
+    .card1 {
+        width: 109.375px;
+        height: 62.5px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card1:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .chead {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-title {
+        font-size: 10.5px;
+    }
+
+    .logos {
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    
+    .card2 {
+        width: 109.375px;
+        height: 62.5px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card2:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card3 {
+        width: 109.375px;
+        height: 62.5px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card3:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .text_box {
+        font-size: 45px;
+        font-weight: bold;
+        position: relative;
+        top: -80px;
+        color: var(--secondary-color);
+    }
+    
+    .Textbooks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Extentions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Research {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Essays {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Scholarships {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Etc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 454px ){
+    .tabContent {
+        width: 100%;
+        height: 700px;   
+    }
+    
+    .tab-button {
+        font-family: 'proxima-nova', sans-serif;
+        font-weight: bold;
+        
+    }
+    
+    .active {
+        font-size: 12px;
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
+    }
+    
+    .non-active {
+        font-size: 12px;
+    }
+    
+    .tabContent .buttonContainer {
+        height: 20%;
+    }
+    
+    .tabContent .buttonContainer button {
+        width: 14.2857143%;
+        height: 100%;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px;
+        font-family: 'proxima-nova', sans-serif;
+        font-weight: bold;
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        transition: transform 0.3s;
+    }
+    
+    .tabContent .buttonContainer button:hover {
+        transform: scale(1.05);
+    } 
+    
+    .tabContent .tabPanel {
+        height: 50%;
+        background-color: var(--primary-color);
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+        font-family: 'proxima-nova', sans-serif;
+        display: flex;
+    }
+
+    .Careers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    } 
+    .row {
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+        height: 100px;
+    }
+ 
+    .card1 {
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card1:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .chead {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-title {
+        font-size: 12.5px;
+    }
+
+    .logos {
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    
+    .card2 {
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card2:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card3 {
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card3:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .text_box {
+        font-size: 45px;
+        font-weight: bold;
+        position: relative;
+        top: -80px;
+        color: var(--secondary-color);
+    }
+    
+    .Textbooks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Extentions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Research {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Essays {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Scholarships {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Etc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 420px ){
+    .tabContent {
+        width: 100%;
+        height: 700px;   
+    }
+    
+    .tab-button {
+        font-family: 'proxima-nova', sans-serif;
+        font-weight: bold;
+        
+    }
+    
+    .active {
+        font-size: 12px;
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
+    }
+    
+    .non-active {
+        font-size: 12px;
+    }
+    
+    .tabContent .buttonContainer {
+        height: 20%;
+    }
+    
+    .tabContent .buttonContainer button {
+        width: 14.2857143%;
+        height: 100%;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px;
+        font-family: 'proxima-nova', sans-serif;
+        font-weight: bold;
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        transition: transform 0.3s;
+    }
+    
+    .tabContent .buttonContainer button:hover {
+        transform: scale(1.05);
+    } 
+    
+    .tabContent .tabPanel {
+        height: 50%;
+        background-color: var(--primary-color);
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+        font-family: 'proxima-nova', sans-serif;
+        display: flex;
+    }
+
+    .Careers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    } 
+    .row {
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+        height: 100px;
+    }
+ 
+    .card1 {
+        width: 80px;
+        height: 40px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card1:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .chead {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-title {
+        font-size: 10px;
+    }
+
+    .logos {
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    
+    .card2 {
+        width: 80px;
+        height: 40px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card2:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .card3 {
+        width: 80px;
+        height: 40px;
+        margin: 10px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: box-shadow 0.5s;
+    }
+    
+    .card3:hover {
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .text_box {
+        font-size: 45px;
+        font-weight: bold;
+        position: relative;
+        top: -80px;
+        color: var(--secondary-color);
+    }
+    
+    .Textbooks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Extentions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Research {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Essays {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Scholarships {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Etc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+}
