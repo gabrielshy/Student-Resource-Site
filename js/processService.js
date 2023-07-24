@@ -1,12 +1,14 @@
 async function getPriceByISBN() {
   const isbnInput = document.getElementById("isbn");
-  const isbn = isbnInput.value.trim();
+  var isbn = isbnInput.value.trim();
 
   if (!/^\d{10,13}$/.test(isbn)) {
     isbnInput.value = "";
     isbnInput.placeholder = "Please enter a valid ISBN (10-13 digits)";
     return;
   }
+
+  isbn = "ISBN" + isbn;
 
   const url = `https://amazon-web-scraping-api.p.rapidapi.com/products/search?criteria=${encodeURIComponent(isbn)}&page=1&countryCode=US&languageCode=EN`;
   const options = {
