@@ -11,6 +11,15 @@
     
 }
 
+.active {
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+}
+
+.non-active {
+    font-size: 18px;
+}
 
 .tabContent .buttonContainer {
     height: 20%;
@@ -25,10 +34,10 @@
     cursor: pointer;
     padding: 10px;
     font-family: 'proxima-nova', sans-serif;
-    font-size: 18px;
     font-weight: bold;
     color: var(--secondary-color);
     background-color: var(--primary-color);
+    transition: transform 0.3s;
 }
 
  .tabContent .buttonContainer button:hover {
@@ -44,8 +53,6 @@
     font-family: 'proxima-nova', sans-serif;
     font-size: 22px;
     display: flex;
-    
-    
 }
 
 /*.Careers {
@@ -57,34 +64,80 @@
     background-color: var(--secondary-color);
 } */
 
+.Careers {
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    width: 100%;
+    height: 500px;
+} 
+
+/* I changed careers cause the cards were in it so I had to put it in the middle */
+
 .card1 {
     border-radius: 25px;
-    width: 475px;
-    height: 400px;
+    width: 437.5px;
+    height: 250px;
     margin: 10px;
     margin-left: 30px;
-    background-color: var(--secondary-color);
+    border-style: solid;
+    border-color: var(--secondary-color);
+    border-width: 1px;
+    background-color: white;
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chead {
+    height: 60px;
+    width: 100%;
+    background-color:aqua;
+}
+
+.ctags {
+    height: 30px;
+    width: 100%;
+    background-color:rgb(103, 158, 81);
+}
+
+.cdisc {
+    height: 140px;
+    width: 100%;
+    background-color:rgb(190, 199, 70);
 }
 
 .card2 {
     border-radius: 25px;
-    width: 475px;
-    height: 400px;
+    width: 437.5px;
+    height: 250px;
     margin: 10px;
-    margin-left: 10px;
-    background-color: var(--secondary-color);
+    margin-left: 30px;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    border-width: 1px;
+    background-color: white;
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card3 {
     border-radius: 25px;
-    width: 475px;
-    height: 400px;
+    width: 437.5px;
+    height: 250px;
     margin: 10px;
-    margin-left: 10px;
-    background-color: var(--secondary-color);
+    margin-left: 30px;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    border-width: 1px;
+    background-color: white;
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -98,30 +151,27 @@
 }
 
 .Textbooks {
+    display: flex;
+    justify-content: center;
     border-radius: 25px;
-    width: 1385px;
+    width: 100%;
     height: 500px;
-    margin: 10px;
-    margin-left: 70px;
-    background-color: var(--secondary-color);
 }
 
 .Extentions {
+    display: flex;
+    justify-content: center;
     border-radius: 25px;
-    width: 1385px;
+    width: 100%;
     height: 500px;
-    margin: 10px;
-    margin-left: 70px;
-    background-color: var(--secondary-color);
 }
 
 .Research {
+    display: flex;
+    justify-content: center;
     border-radius: 25px;
-    width: 1385px;
+    width: 100%;
     height: 500px;
-    margin: 10px;
-    margin-left: 70px;
-    background-color: var(--secondary-color);
 }
 
 .Essays {
