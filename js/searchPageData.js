@@ -1,23 +1,27 @@
 const dataFromStorage = JSON.parse(sessionStorage.getItem('data'));
-
 console.log(dataFromStorage)
 
-const isbn = dataFromStorage.isbn
+const products = dataFromStorage.products;
+const product1 = products[0];
+const imgObj = product1.image;
+const imgUrl = imgObj.url;
 
-document.getElementById("isbn-text").innerText = isbn;
+document.getElementById("img").setAttribute("src", imgUrl);
 
-const newPrice = dataFromStorage.pricingInfoForBestNew.bestPriceInPurchaseCurrencyWithCurrencySymbol;
-const newTotalResults = dataFromStorage.pricingInfoForBestNew.totalResults;
-const usedPrice = dataFromStorage.pricingInfoForBestUsed.bestPriceInPurchaseCurrencyWithCurrencySymbol;
-const usedTotalResults = dataFromStorage.pricingInfoForBestUsed.totalResults;
+const price = product1.price.currentPrice;
+const priceSymbol = product1.price.priceSymbol;
 
-const newPriceText = document.getElementById("newPriceText")
-const newTotalText =  document.getElementById("newTotalText")
-const usedPriceText = document.getElementById("usedPriceText")
-const usedTotalText = document.getElementById("usedTotalText")
+document.getElementById('price').innerText = priceSymbol + price;
 
-newPriceText.innerText = newPrice;
-newTotalText.innerText = newTotalResults;
-usedPriceText.innerText = usedPrice;
-usedTotalText.innerText = usedTotalResults;
+const url = product1.url;
 
+document.getElementById('redir').setAttribute("href", url)
+
+const name = product1.name;
+const productNameElement = document.getElementById('product-name');
+productNameElement.innerText = name;
+
+
+if (name.length > 20) {
+  productNameElement.style.fontSize = '15px';
+}

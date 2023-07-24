@@ -9,7 +9,9 @@
 }
 
 .slide-animation {
-    padding-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
     display: flex;
     align-items: center;
 }
@@ -17,7 +19,6 @@
 .img {
     width: 550px;
     border-radius: 10px;
-    margin-left: 40px;
     border-width: 0.2px;
     border-color: rgb(68, 68, 68);
     border-style: solid;
@@ -73,3 +74,87 @@
     text-decoration: none;
     transform: scale(1.03);
 }
+
+@media only screen and (max-width: 1200px ){
+    .break-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--primary-break-color);
+        width: 100%;
+        height: 150px;
+    }
+
+    .slide-animation {
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .img {
+        width: 175px;
+        border-radius: 10px;
+        border-width: 0.2px;
+        border-color: rgb(68, 68, 68);
+        border-style: solid;
+        transition: 
+        transform 0.5s;
+    }
+    
+    .img:hover {
+        transform: scale(1.01);
+    }
+    
+    .hidden .slide-animation {
+        opacity: 0;
+        transition: 
+        opacity 2s,
+        transform 1.5s;
+    }
+    
+    .hidden .bottom-text-card {
+        opacity: 0;
+        transition: 
+        opacity 2s,;
+    }
+
+    .show {
+        opacity: 1;
+    }
+    
+    .bottom-text-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        vertical-align: bottom;
+        width: 100%;
+        height: 0px;
+        margin-top: 300px;
+        margin-bottom: 200px;
+    }
+    
+    .bottom-text {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+    .topic {
+        color: var(--secondary-color);
+        text-decoration: none;
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        transition: transform 0.5s;
+    }
+    
+    .topic:hover {
+        color: var(--secondary-color);
+        text-decoration: none;
+        transform: scale(1.03);
+    }
+}
+
