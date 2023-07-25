@@ -247,22 +247,25 @@
         justify-content: center;
         border-radius: 25px;
         width: 100%;
-        height: 200px;
+        height: 300px;
     }
  
-    .card1 {
-        width: 228.75px;
-        height: 125px;
-        margin-left: 25px;
+    .card {
+        width: 300.75px;
+        height: 215px;
+        margin-left: 30px;
         border-style: solid;
         border-color: var(--secondary-color);
         border-width: 1px;
-        background-color: white;
+        background-color: var(--primary-color);
         float: left;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        transition: box-shadow 0.5s;
+        cursor: pointer;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: box-shadow 0.5s, transform 0.5s;
     }
 
     .card-title {
@@ -270,39 +273,14 @@
         margin-bottom: 0;
     }
 
-    .card2 {
-        width: 218.75px;
-        height: 125px;
-        margin-left: 25px;
-        border-style: solid;
-        border-color: var(--secondary-color);
-        border-width: 1px;
-        background-color: white;
-        float: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: box-shadow 0.5s;
+    .description {
+        font-size: 13px;
+        color: var(--secondary-color);
     }
-    
-    .card3 {
-        width: 218.75px;
-        height: 125px;
-        margin-left: 25px;
-        border-style: solid;
-        border-color: var(--secondary-color);
-        border-width: 1px;
-        background-color: white;
-        float: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: box-shadow 0.5s;
-    }
-    
+
 }
 
-@media only screen and (max-width: 800px ){
+@media only screen and (max-width: 995px ){
     .tabContent {
         width: 100%;
         height: 500px;   
@@ -327,22 +305,25 @@
         justify-content: center;
         border-radius: 25px;
         width: 100%;
-        height: 100px;
+        height: 250px;
     }
  
-    .card1 {
-        width: 140.375px;
-        height: 82.5px;
-        margin-left: 20px;
+    .card {
+        width: 220.375px;
+        height: 200.5px;
+        margin-left: 30px;
         border-style: solid;
         border-color: var(--secondary-color);
         border-width: 1px;
-        background-color: white;
+        background-color: var(--primary-color);
         float: left;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        transition: box-shadow 0.5s;
+        cursor: pointer;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: box-shadow 0.5s, transform 0.5s;
     }
 
     .chead {
@@ -358,38 +339,212 @@
         margin-bottom: 0;
     }
 
-    .card2 {
-        width: 140.375px;
-        height: 82.5px;
-        margin-left: 20px;
-        border-style: solid;
-        border-color: var(--secondary-color);
-        border-width: 1px;
-        background-color: white;
-        float: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: box-shadow 0.5s;
-    }
-    
-    .card3 {
-        width: 140.375px;
-        height: 82.5px;
-        margin-left: 20px;
-        border-style: solid;
-        border-color: var(--secondary-color);
-        border-width: 1px;
-        background-color: white;
-        float: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: box-shadow 0.5s;
+    .description {
+        font-size: 10px;
+        color: var(--secondary-color);
     }
 }
 
-@media only screen and (max-width: 485px ){
+@media only screen and (max-width: 755px ){
+    .tabContent {
+        width: 100%;
+        height: 500px;   
+    }
+
+    .active {
+        font-size: 13px;
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
+    }
+    
+    .non-active {
+        font-size: 10px;
+    }
+
+    .tabContent .buttonContainer button:hover {
+        transform: scale(1.05);
+    } 
+
+    .row {
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+        height: 350px;
+    }
+ 
+    .card {
+        width: 200.375px;
+        height: 300.5px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: var(--primary-color);
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: box-shadow 0.5s, transform 0.5s;
+    }
+
+    .chead {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-title {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .description {
+        font-size: 10px;
+        color: var(--secondary-color);
+    }
+}
+
+@media only screen and (max-width: 703px ){
+    .tabContent {
+        width: 100%;
+        height: 500px;   
+    }
+
+    .active {
+        font-size: 13px;
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
+    }
+    
+    .non-active {
+        font-size: 10px;
+    }
+
+    .tabContent .buttonContainer button:hover {
+        transform: scale(1.05);
+    } 
+
+    .row {
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+        height: 350px;
+    }
+ 
+    .card {
+        width: 180.375px;
+        height: 300.5px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: var(--primary-color);
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: box-shadow 0.5s, transform 0.5s;
+    }
+
+    .chead {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-title {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .description {
+        font-size: 10px;
+        color: var(--secondary-color);
+    }
+}
+
+@media only screen and (max-width: 633px ){
+    .tabContent {
+        width: 100%;
+        height: 500px;   
+    }
+
+    .active {
+        font-size: 13px;
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
+    }
+    
+    .non-active {
+        font-size: 10px;
+    }
+
+    .tabContent .buttonContainer button:hover {
+        transform: scale(1.05);
+    } 
+
+    .row {
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
+        width: 100%;
+        height: 350px;
+    }
+ 
+    .card {
+        width: 160.375px;
+        height: 300.5px;
+        margin-left: 30px;
+        border-style: solid;
+        border-color: var(--secondary-color);
+        border-width: 1px;
+        background-color: var(--primary-color);
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: box-shadow 0.5s, transform 0.5s;
+    }
+
+    .chead {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-title {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .description {
+        font-size: 10px;
+        color: var(--secondary-color);
+    }
+}
+
+@media only screen and (max-width: 573px ){
+    .tabContent {
+        height: 1900px;
+    }
+
     .active {
         font-size: 10px;
         text-decoration: underline;
@@ -402,25 +557,32 @@
 
     .row {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        vertical-align: middle;
+        align-items: center;
+        flex-direction: column;
         border-radius: 25px;
         width: 100%;
-        height: 100px;
+        height: 700px;
+        margin-bottom: 50px;
     }
- 
-    .card1 {
-        width: 120px;
-        height: 70px;
-        margin-left: 15px;
+
+    .card {
+        width: 300px;
+        height: 200.5px;
+        margin-left: 30px;
         border-style: solid;
         border-color: var(--secondary-color);
         border-width: 1px;
-        background-color: white;
+        background-color: var(--primary-color);
         float: left;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        transition: box-shadow 0.5s;
+        cursor: pointer;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        transition: box-shadow 0.5s, transform 0.5s;
     }
     
     .chead {
@@ -436,209 +598,56 @@
         margin-bottom: 0;
     }
 
-    .card2 {
-        width: 120px;
-        height: 70px;
-        margin-left: 15px;
-        border-style: solid;
-        border-color: var(--secondary-color);
-        border-width: 1px;
-        background-color: white;
-        float: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: box-shadow 0.5s;
-    }
-
-    .card3 {
-        width: 120px;
-        height: 70px;
-        margin-left: 15px;
-        border-style: solid;
-        border-color: var(--secondary-color);
-        border-width: 1px;
-        background-color: white;
-        float: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: box-shadow 0.5s;
-    }
-}
-
-@media only screen and (max-width: 420px ){
-    .active {
-        font-size: 8px;
-        text-decoration: underline;
-        text-decoration-color: var(--secondary-color);
-    }
-    
-    .non-active {
-        font-size: 8px;
-    }
-    
-    .tabContent .buttonContainer {
-        height: 20%;
-    }
-
-    .row {
-        display: flex;
-        justify-content: center;
-        border-radius: 25px;
-        width: 100%;
-        height: 100px;
-    }
- 
-    .card1 {
-        width: 100px;
-        height: 60px;
-        margin-left: 10px;
-        border-style: solid;
-        border-color: var(--secondary-color);
-        border-width: 1px;
-        background-color: white;
-        float: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: box-shadow 0.5s;
-    }
-
-    .chead {
-        height: 60px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .card-title {
+    .description {
         font-size: 10px;
-        margin-bottom: 0;
+        color: var(--secondary-color);
     }
 
-    .logos {
-        height: 40px;
-        border-radius: 20px;
-        margin-left: 20px;
-    }
-    
-    .card2 {
-        width: 100px;
-        height: 60px;
-        margin-left: 10px;
-        border-style: solid;
-        border-color: var(--secondary-color);
-        border-width: 1px;
-        background-color: white;
-        float: left;
+    .Textbooks {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        transition: box-shadow 0.5s;
-    }
-
-    .card3 {
-        width: 100px;
-        height: 60px;
-        margin-left: 10px;
-        border-style: solid;
-        border-color: var(--secondary-color);
-        border-width: 1px;
-        background-color: white;
-        float: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: box-shadow 0.5s;
-    }
-}
-
-@media only screen and (max-width: 363px ){
-    .active {
-        font-size: 8px;
-        text-decoration: underline;
-        text-decoration-color: var(--secondary-color);
-    }
-    
-    .non-active {
-        font-size: 8px;
-    }
-    
-    .tabContent .buttonContainer {
-        height: 20%;
-    }
-
-    .row {
-        display: flex;
-        justify-content: center;
+        justify-content: space-between;
         border-radius: 25px;
         width: 100%;
-        height: 100px;
     }
- 
-    .card1 {
-        width: 80px;
-        height: 40px;
-        margin-left: 5px;
-        border-style: solid;
-        border-color: var(--secondary-color);
-        border-width: 1px;
-        background-color: white;
-        float: left;
+    
+    .Extentions {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        transition: box-shadow 0.5s;
-    }
-
-    .chead {
-        height: 60px;
+        justify-content: space-between;
+        border-radius: 25px;
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
-    .card-title {
-        font-size: 8px;
-        margin-bottom: 0;
-    }
-
-    .logos {
-        height: 40px;
-        border-radius: 20px;
-        margin-left: 20px;
+    .Research {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 25px;
+        width: 100%;
     }
     
-    .card2 {
-        width: 80px;
-        height: 40px;
-        margin-left: 5px;
-        border-style: solid;
-        border-color: var(--secondary-color);
-        border-width: 1px;
-        background-color: white;
-        float: left;
+    .Essays {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        transition: box-shadow 0.5s;
+        justify-content: space-between;
+        border-radius: 25px;
+        width: 100%;
     }
-
-    .card3 {
-        width: 80px;
-        height: 40px;
-        margin-left: 5px;
-        border-style: solid;
-        border-color: var(--secondary-color);
-        border-width: 1px;
-        background-color: white;
-        float: left;
+    
+    .Scholarships {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        transition: box-shadow 0.5s;
+        justify-content: space-between;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    .Etc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 25px;
+        width: 100%;
     }
 }

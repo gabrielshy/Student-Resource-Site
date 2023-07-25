@@ -38,7 +38,7 @@
         flex-direction: column;
         justify-content: space-between;
         background-color: var(--primary-color);
-        height: 100vh;
+        height: 1400px;
     }
     
     .top-card {
@@ -68,13 +68,13 @@
     }
 }
 
-@media only screen and (max-width: 454px ){
+@media only screen and (max-width: 573px ){
     .body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         background-color: var(--primary-color);
-        height: 100vh;
+        height: 2150px;
     }
     
     .top-card {
