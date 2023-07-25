@@ -5,7 +5,7 @@
 
 *demo @ https://www.youtube.com/watch?v=23lAgfydiIo*
 ## Inspiration
-Before going into the project, we thought about how we can improve the lives of students like us. We settled on the idea of creating a website that hosts helpful student resources that we ourselves use.
+Before going into the project, we thought about how we can improve the lives of students like us. We settled on the idea of creating a website that hosts helpful student resources that we ourselves use. Next, was what to call our website - we wanted something funny, but also pertains to our cause. Recently we had seen a funny meme ([here](https://knowyourmeme.com/memes/pluh-plug-sound-effect)), which is hidden in our website, and decided to mix "Student" and "Pluh" (Plug).
 
 ## What it does
 Our website has multiple functions. The most prominent function is the resources tab, where we keep multiple helpful student resources. Our textbook section allows people to search ISBNs and are currently able to get Amazon Prices for it. For aesthetic and accessibility, we’ve added a dark-mode option to the website as well.
@@ -23,4 +23,4 @@ We’re both proud of the amount we’ve learned and what we’ve built, and bei
 We’ve learned a whole lot: JavaScript, APIs, and Web Development - it might have been a pain, but we’re happy.
 
 ## What's next for StudentPluh
-StudentPluh won’t be going away for a long time. We plan on implementing more APIs for the textbook search function and have more ideas coming - one of which is a resume helper. We also plan to update the resource page constantly, putting whatever we find helpful on it. Lastly, we hope to branch our website out further to other students to get feedback and build a community.
+StudentPluh won’t be going away for a long time. We plan on implementing more APIs for the textbook search function and have more ideas coming - one of which is a resume helper. We also plan to update the resource page constantly, putting whatever we find helpful on it. Lastly, we hope to branch our website out further to other students to get feedback and build a community
