@@ -38,6 +38,42 @@
         flex-direction: column;
         justify-content: space-between;
         background-color: var(--primary-color);
+        height: 1000px;
+    }
+    
+    .top-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        height: 250px;
+    }
+    
+    .title-head {
+        display: flex;
+        justify-content: column;
+    
+    }
+    
+    .title1 {
+        color: var(--secondary-color);
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .title2 {
+        color: var(--secondary-color);
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 757px ){
+    .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--primary-color);
         height: 1400px;
     }
     
